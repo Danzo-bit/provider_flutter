@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, prefer_interpolation_to_compose_strings
 
 import 'package:catalog_provider/src/cart_model.dart';
 import 'package:flutter/material.dart';
@@ -46,7 +46,9 @@ class Cart extends StatelessWidget {
                       width: 20,
                     ),
                     ElevatedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        cart.removeAll();
+                      },
                       child: Text('Buy'),
                     )
                   ],
