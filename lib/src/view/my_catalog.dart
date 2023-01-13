@@ -3,7 +3,6 @@
 import 'package:catalog_provider/src/view/cart.dart';
 import 'package:catalog_provider/src/data/my_list_items.dart';
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 
 class Catalog extends StatelessWidget {
   const Catalog({super.key});
