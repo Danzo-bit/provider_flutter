@@ -1,6 +1,6 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, prefer_interpolation_to_compose_strings
 
-import 'package:catalog_provider/src/cart_model.dart';
+import 'package:catalog_provider/src/model/cart_model.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 

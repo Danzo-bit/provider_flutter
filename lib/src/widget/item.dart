@@ -2,8 +2,8 @@
 
 import 'dart:developer';
 
-import 'package:catalog_provider/src/cart_model.dart';
-import 'package:catalog_provider/src/widgets.dart';
+import 'package:catalog_provider/src/model/cart_model.dart';
+import 'package:catalog_provider/src/widget/widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -26,7 +26,6 @@ class Item extends StatelessWidget {
             TextButton(
                 onPressed: () {
                   cart.add(this);
-                  log(cart.items.toString());
                 },
                 child: 
                 cart.items.contains(this) ?

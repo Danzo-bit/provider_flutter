@@ -1,8 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
-import 'package:catalog_provider/src/cart.dart';
-import 'package:catalog_provider/src/cart_model.dart';
-import 'package:catalog_provider/src/my_list_items.dart';
+import 'package:catalog_provider/src/view/cart.dart';
+import 'package:catalog_provider/src/data/my_list_items.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -27,13 +26,9 @@ class Catalog extends StatelessWidget {
               icon: Icon(Icons.shopping_cart))
         ],
       ),
-      body: Consumer<CartModel>(
-        builder: (BuildContext context, cart, Widget? child) {
-          return ListView(
+      body: ListView(
             children: [...MyListItem.items],
-          );
-        },
-      ),
+          )
     );
   }
 }

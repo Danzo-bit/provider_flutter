@@ -1,6 +1,5 @@
-import 'package:catalog_provider/src/cart.dart';
-import 'package:catalog_provider/src/cart_model.dart';
-import 'package:catalog_provider/src/my_catalog.dart';
+import 'package:catalog_provider/src/model/cart_model.dart';
+import 'package:catalog_provider/src/view/my_catalog.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 

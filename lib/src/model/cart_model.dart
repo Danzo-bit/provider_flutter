@@ -2,7 +2,8 @@ import 'dart:collection';
 
 import 'package:flutter/foundation.dart';
 
-import 'item.dart';
+import '../widget/item.dart';
+//copied from https://docs.flutter.dev/development/data-and-backend/state-mgmt/simple
 
 class CartModel extends ChangeNotifier {
   /// Internal, private state of the cart.
@@ -17,7 +18,11 @@ class CartModel extends ChangeNotifier {
   /// Adds [item] to cart. This and [removeAll] are the only ways to modify the
   /// cart from the outside.
   void add(Item item) {
-    _items.add(item);
+    if (_items.contains(item)) {
+      _items.remove(item);
+    } else {
+      _items.add(item);
+    }
     // This call tells the widgets that are listening to this model to rebuild.
     notifyListeners();
   }
